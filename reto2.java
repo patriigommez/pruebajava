@@ -3,7 +3,7 @@ public class reto2 {
 		//Pedir nombre
 		
 		String nombre = "Ana";
-		String apellidos = "Lisa Melano";
+		String apellidos = "Ruiz Gomez";
 	
 		
 		String saludo = ("Hola, " + nombre + apellidos);
@@ -11,12 +11,14 @@ public class reto2 {
 		
 		System.out.println(nombre.toUpperCase());
 		
-		apellidos.indexOf(" ");
-		System.out.println(apellidos.indexOf(" "));
+		int espacioApellidos = apellidos.indexOf(" ");
+		String Ruiz = apellidos.substring(0, espacioApellidos);
+		String Gomez = apellidos.substring(espacioApellidos + 1);
+
+		System.out.println(Ruiz.toLowerCase());
+		System.out.println(Gomez.toUpperCase());
 		
-		System.out.println(apellidos.substring(4));
 		
-		System.out.println(apellidos.toUpperCase());
-		
+
 	}	
 }
