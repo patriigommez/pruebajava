@@ -2,18 +2,18 @@ import java.util.Scanner;
 public class reto2 {
 	public static void main(String[] args) {
 		
-		try (Scanner scanner1 = new Scanner("Por favor, introduzca sus datos a continuacion:")) {
+		(Scanner scanner1 = new Scanner(System.in)) 
 			
 			//Pedir nombre y apellidos
-			String nombre = scanner1.nextLine();
 			System.out.print("Introduzca su nombre: ");
+			String nombre = scanner1.nextLine();
 
-			String apellidos = scanner1.nextLine();
 			System.out.print("Introduzca sus apellidos: ");
+			String apellidos = scanner1.nextLine();
 
 			//Pedir cargo
-			String cargo = scanner1.nextLine(); 
 			System.out.print("Introduzca su cargo: ");
+			String cargo = scanner1.nextLine(); 
 			
 			//Convertir nombre a mayusculas
 			System.out.println(nombre.toUpperCase());
@@ -47,4 +47,3 @@ public class reto2 {
 		}
 
 	}	
-}
