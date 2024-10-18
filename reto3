@@ -8,20 +8,22 @@ public class reto3 {
 		int introducido;
 		boolean encontrado = false;
 		
-		System.out.print("Busque un numero entre el 1 y el 10");
+		System.out.print("Busque un numero entre el 1 y el 10. ");
 
-		while (!encontrado) {
-		    System.out.print("Introduzca el numero que cree que es: ");
+		while (encontrado == false) {
+		    System.out.println("Introduzca el numero que cree que es: ");
             introducido = sc.nextInt();
 
             if (introducido < numPredefinido) {
-                System.out.print("El numero ingresado es menor al correcto.");
+                System.out.println("El numero ingresado es menor al correcto.");
 
             } else if (introducido > numPredefinido) {
-                System.out.print("El numero ingresado es mayor al correcto");
+                System.out.println("El numero ingresado es mayor al correcto");
 
             } else {
-                System.out.print ("Enhorabuena! Has acertado.");
-                acertado = true;
+                System.out.println("Enhorabuena! Has acertado.");
+       encontrado= true;
             }
-        }
+		}
+	}
+}
