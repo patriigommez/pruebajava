@@ -4,26 +4,29 @@ public class ejextraunidad4 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int mayorNumero;
-		int menorNumero;
-		int sumaNumeros;
-		int promedioNumeros;
-		
-		
-			System.out.print("Introduzca 10 numeros enteros, uno por uno: ");
-			 
+		int mayor =  Integer.MIN_VALUE;
+		int menor = Integer.MAX_VALUE;
+		int suma = 0;
+		 
 		for (int i = 0; i <= 0; i ++)   {
-		System.out.print("Introduce el número" + (i + 1) + ": ");
-		int numero = scanner.nextInt();
+			System.out.print("Introduce el número" + (i + 1) + ": ");
+			int numero = scanner.nextInt();
+
+			if (numero > mayor) {
+              		 	mayor = numero;
 		}
-		
-		
-		
-		
-				
-			
-			
-		
-	}
-	
+			if (numero < menor) {
+               			 menor = numero;
+		}
+			suma += numero;
+	  }
+		double promedio	= suma /10.0;
+
+		System.out.println("El mayor número introducido es: " + mayor);
+       		System.out.println("El menor número introducido es: " + menor);
+        	System.out.println("La suma de todos los números es: " + suma);
+        	System.out.println("El promedio de los números es: " + promedio);
+        
+        	scanner.close();	
+  }	
 }
