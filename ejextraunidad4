@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class ejextraunidad4 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int mayorNumero;
+		int menorNumero;
+		int sumaNumeros;
+		int promedioNumeros;
+		
+		
+			System.out.print("Introduzca 10 numeros enteros, uno por uno: ");
+			 
+		for (int i = 0; i <= 0; i ++)   {
+		System.out.print("Introduce el número" + (i + 1) + ": ");
+		int numero = scanner.nextInt();
+		}
+		
+		
+		
+		
+				
+			
+			
+		
+	}
+	
+}
